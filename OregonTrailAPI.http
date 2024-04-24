@@ -1,0 +1,6 @@
+@OregonTrailAPI_HostAddress = http://localhost:5149
+
+GET {{OregonTrailAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

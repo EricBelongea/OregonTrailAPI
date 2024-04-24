@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OregonTrailAPI", "OregonTrailAPI.csproj", "{81DBF2A5-35AB-4CD5-9643-6D4C51898534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OregonTrailAPI.Context", "..\OregonTrailAPI.Context\OregonTrailAPI.Context.csproj", "{29BB27C3-590C-442E-A3D6-52E3CE080B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81DBF2A5-35AB-4CD5-9643-6D4C51898534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DBF2A5-35AB-4CD5-9643-6D4C51898534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DBF2A5-35AB-4CD5-9643-6D4C51898534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DBF2A5-35AB-4CD5-9643-6D4C51898534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29BB27C3-590C-442E-A3D6-52E3CE080B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BB27C3-590C-442E-A3D6-52E3CE080B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BB27C3-590C-442E-A3D6-52E3CE080B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BB27C3-590C-442E-A3D6-52E3CE080B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28CCDBB2-D7A1-48EE-9F13-67B134287D4C}
+	EndGlobalSection
+EndGlobal
