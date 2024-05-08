@@ -31,7 +31,10 @@ namespace OregonTrailAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Caravan>> GetCaravan(int id)
         {
-            var caravan = await _context.Caravans.FindAsync(id);
+            var caravan = await _context.Caravans
+                .Include(c => c.Wagons)
+                .ThenInclude(w => w.Passengers)
+                .FirstOrDefaultAsync(c => c.CaravanId == id);
 
             if (caravan == null)
             {
