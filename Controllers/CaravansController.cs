@@ -24,7 +24,9 @@ namespace OregonTrailAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Caravan>>> GetCaravans()
         {
-            return await _context.Caravans.ToListAsync();
+            return await _context.Caravans
+                .Include(c => c.Wagons)
+                .ToListAsync();
         }
 
         // GET: api/Caravans/5

@@ -33,7 +33,12 @@ namespace OregonTrailAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Wagon>> GetWagon(int id)
         {
-            var wagon = await _context.Wagons.FindAsync(id);
+            var wagon = await _context.Wagons
+                .Include(w => w.Passengers)
+                    .ThenInclude(p => p.PassengerFoods)
+                        .ThenInclude(navigationPropertyPath: pf => pf.Food)
+                .Include(w => w.Items)
+                .FirstOrDefaultAsync(W => W.WagonId == id);
 
             if (wagon == null)
             {
